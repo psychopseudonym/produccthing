@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+
+public class product 
+{
+   public String pID;
+   public String sprice;
+   public String pprice ;
+   public String textD;
+   public int numb;
+   public int nums;
+   public int numoh;
+   public int profit;
+   public int taxes ;
+    
+   public static void main(String[]args)
+   {
+      
