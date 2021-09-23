@@ -1,0 +1,15 @@
+blk1 12.50 23.00 Black Coat
+wht1 15.25 23.00 White Coat
+snk1 10.50 44.95 Basic White Sneaker
+snk11 10.75 49.95 Black and White Sneaker
+tp1 7.25 15.00 Multicolor Womens T-Shirt
+tp15 5.30 12.25 Stripped Youth T-Shirt
+tp25 8.95 23.45 Solid Black Mens T-Shirt
+scks 1.25 6.95 Girls Solid White Socks
+tbl3 27.50 52.00 Wood End Table
+bkcs1 15.75 39.75 White 4-shelf Book Shelf
+chr2 18.30 24.75 Student Desk Chair
+gbkpk 2.25 18.50 Girls Fashion Backpack
+bbkpk 1.75 18.50 Boys Racer Backpack
+pncls 0.55 2.25 Dozen Yellow Pencils
+pens 0.60 2.25 Dozen Blue Pens
