@@ -1,11 +1,11 @@
 # produccthing
 
-pid = Product ID
-sp = Sale price
-bp = Buy Price
-d = Description, a string
-t = Tax
-s = # sold
-b = # bought
-nOH = number On Hand
-pr = profit
+pid = Product ID \n
+sp = Sale price \n
+bp = Buy Price \n
+d = Description, a string \n 
+t = Tax \n 
+s = # sold \n 
+b = # bought \n 
+nOH = number On Hand \n
+pr = profit \n
