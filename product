@@ -3,15 +3,15 @@ import java.io.*;
 
 public class product 
 {
-   public String pID;
-   public String sprice;
-   public String pprice ;
-   public String textD;
-   public int numb;
-   public int nums;
-   public int numoh;
-   public int profit;
-   public int taxes ;
+   public String pid;
+   public String sp ;
+   public String bp  ;
+   public String d ;
+   public int t ;
+   public int s;
+   public int b;
+   public int nOH ;
+   public int pr ;
     
    public static void main(String[]args)
    {
