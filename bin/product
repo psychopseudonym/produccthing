@@ -3,16 +3,26 @@ import java.io.*;
 
 public class product 
 {
-   public String pID;
-   public String sprice;
-   public String pprice ;
-   public String textD;
-   public int numb;
-   public int nums;
-   public int numoh;
-   public int profit;
-   public int taxes ;
+      public String pID;
+      public String sprice;
+      public String pprice;
+      public String textD;
+      public int numb;
+      public int nums;
+      public int numoh;
+      public int profit;
+      public int taxes;
     
-   public static void main(String[]args)
-   {
-      
+   public static void main(String[]args){
+   }
+   public static void print(String p){
+      System.out.print(p);
+   }
+   public static void println(String p){
+   System.out.println(p);
+   }
+   public static String getUInput(){
+      Scanner scn = new Scanner(System.in);
+      String userInputReturned = scn.Next();
+      return userInputReturned;
+   }
