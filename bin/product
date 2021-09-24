@@ -2,17 +2,24 @@ import java.util.*;
 import java.io.*;
 
 public class Product {
-      //initializing
+   static{
+   
+   }
+      //initializing fields, refer to README for descriptions
    public String pID;
    public String salePrice;
-   public String buyPrice; // or pricePaid
+   public String buyPrice;
    public String textD;
    public int numB;
    public int numS;
    public int numOH;
-   public int profit;
-   public int taxes;
+   public double profit;
+   public float taxes;
+   public float taxO; 
     
+    Product(String id, String desc, double sprice, double bprice, int nb, int ns, int noh, double p){
+    
+    }
    public static void main(String[]args){
    
       }
