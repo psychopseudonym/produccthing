@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class product {
+public class Product {
       public String pID;
       public String sprice;
       public String pprice;
