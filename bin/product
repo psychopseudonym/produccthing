@@ -2,15 +2,16 @@ import java.util.*;
 import java.io.*;
 
 public class Product {
-      public String pID;
-      public String sprice;
-      public String pprice;
-      public String textD;
-      public int numb;
-      public int nums;
-      public int numoh;
-      public int profit;
-      public int taxes;
+      //initializing
+   public String pID;
+   public String salePrice;
+   public String buyPrice; // or pricePaid
+   public String textD;
+   public int numB;
+   public int numS;
+   public int numOH;
+   public int profit;
+   public int taxes;
     
    public static void main(String[]args){
    
