@@ -14,15 +14,17 @@ public class product
       public int taxes;
     
    public static void main(String[]args){
-   }
+   
+      }
    public static void print(String p){
       System.out.print(p);
-   }
+      }
    public static void println(String p){
    System.out.println(p);
-   }
+      }
    public static String getUInput(){
       Scanner scn = new Scanner(System.in);
       String userInputReturned = scn.Next();
       return userInputReturned;
+      }
    }
