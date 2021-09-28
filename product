@@ -4,6 +4,10 @@ import java.io.*;
 
 public class Product 
 {
+   static {
+      Scanner scnin = new Scanner();
+      float taxr = 
+   }
    public String pID;
    public String sPrice;
    public String pPrice;
@@ -46,3 +50,19 @@ public class Product
             return pro;
          }
        }
+
+    Product(String id, String desc, double sprice, double bprice, int nb, int ns, int noh, double p){
+    
+    }
+   public static void print(String p){
+      System.out.print(p);
+      }
+   public static void println(String p){
+   System.out.println(p);
+      }
+   public static String getUInput(){
+      Scanner scn = new Scanner(System.in);
+      String userInputReturned = scn.Next();
+      return userInputReturned;
+      }
+   }
