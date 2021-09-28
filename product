@@ -1,18 +1,48 @@
+
 import java.util.*;
 import java.io.*;
 
-public class product 
+public class Product 
 {
-   public String pid;
-   public String sp ;
-   public String bp  ;
-   public String d ;
-   public int t ;
-   public int s;
-   public int b;
-   public int nOH ;
-   public int pr ;
+   public String pID;
+   public String sPrice;
+   public String pPrice;
+   public String textD;
+   public int numB;
+   public int numS;
+   public int numOh;
+   public int profit;
+   public int taxes;
+   public String[] products;
+   public ArrayList<Product> produtStats = new ArrayList<Product>();
     
    public static void main(String[]args)
    {
+   
       
+   }
+   public static ArrayList<Product> produtStats (String fileName)
+   {
+      ArrayList<Product> pro = new ArrayList<Product>();
+      String[] dataP = null;
+       try
+            {
+               File products  = new File("C:\\Users\\donnelaar\\Downloads\\products.txt");//This is the file
+               Scanner myReader = new Scanner(products);//this is whats going to read my file 
+               while(myReader.hasNextLine())//this loop reads file and does the multipling and the prenting 
+               {
+                   String line = myReader.nextLine();
+                   dataP = line.split("/s");
+                   System.out.println(dataP);
+               }
+               myReader.close();//closing the file 
+            }
+            catch(FileNotFoundException|NoSuchElementException e)
+            {
+               System.out.println("An error occured.");
+               e.printStackTrace();
+            }
+            list.add( new Product(dataP[0],dataP[1],dataP[2],dataP[3],dataP[4]));
+            return pro;
+         }
+       }
