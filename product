@@ -31,9 +31,11 @@ public class Product
       String[] dataP;
        try
             {
-               File products  = new File("C:\\Users\\donnelaar\\Downloads\\products.txt");//This is the file
-               Scanner myReader = new Scanner(products);//this is whats going to read my file 
-               while(myReader.hasNextLine())//this loop reads file and does the multipling and the prenting 
+               File products  = new File("C:\\Users\\donnelaar\\Downloads\\products.txt");//This is the products file
+               File transacts = new File("C:\\Users\\donnelaar\\Downloads\\transactions.txt"); this is the transactions file
+               Scanner productsReader = new Scanner(products);// this is the reader for the products file
+               Scanner transactsReader = new Scanner(transacts);
+               while(myReader.hasNextLine())//this loop reads file, supposed to
                {
                    String line = myReader.nextLine();
                    dataP = line.split("/s");
@@ -46,14 +48,7 @@ public class Product
                System.out.println("An error occured.");
                e.printStackTrace();
             }
-            String str1 =" ";
-            String str2 =" ";
-            String str3 =" ";
-            String str4 =" ";
-            int num1 = 0;
-            int num2 = 0;
-            int num3 = 0;
-            int num4 = 0;
+            
             for(int i = 0,i < 8,i++)
             {
                str1 = dataP[i]
