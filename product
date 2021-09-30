@@ -11,29 +11,33 @@ public class Product
    public int numB;
    public int numS;
    public int numOh;
-   public int profit;
+   public int profitG;
    public int taxes;
-   public String[] products;
    public ArrayList<Product> produtStats = new ArrayList<Product>();
     
    public static void main(String[]args)
    {
-   
+     System.out.println(produtStats("C:\\Users\\donnelaar\\Downloads\\products.txt"));
       
+   }
+   public Product(String pID2, String sPrice2, String pPrice2, String textD2, int numB2,  int numS2,  int numOh2, int profitG2)
+   {
+       pID = pID2; sPrice = sPrice2; textD = textD2; pPrice = pPrice2; 
+      numB = numB2; numS = numS2;  numOh = numOh2; profitG = profitG2;
    }
    public static ArrayList<Product> produtStats (String fileName)
    {
       ArrayList<Product> pro = new ArrayList<Product>();
-      String[] dataP = null;
+      String[] dataP = { "a", "b", "c","d", "e", "f", "g ","h",};
+      String line = " holder"; 
        try
             {
                File products  = new File("C:\\Users\\donnelaar\\Downloads\\products.txt");//This is the file
-               Scanner myReader = new Scanner(products);//this is whats going to read my file 
-               while(myReader.hasNextLine())//this loop reads file and does the multipling and the prenting 
+               Scanner myReader = new Scanner(products);//this is whats going to read my file
+               while(myReader.hasNextLine())//this loop reads file 
                {
-                   String line = myReader.nextLine();
-                   dataP = line.split("/s");
-                   System.out.println(dataP);
+                    line = myReader.nextLine();
+                   
                }
                myReader.close();//closing the file 
             }
@@ -42,7 +46,14 @@ public class Product
                System.out.println("An error occured.");
                e.printStackTrace();
             }
-            list.add( new Product(dataP[0],dataP[1],dataP[2],dataP[3],dataP[4]));
-            return pro;
+            dataP = line.split("/s");
+            System.out.println(dataP);
+            int num1 = Integer.parseInt(dataP[4]);
+            int num2 = Integer.parseInt(dataP[5]);
+            int num3 = Integer.parseInt(dataP[6]);
+            int num4 = Integer.parseInt(dataP[7]);
+            
+            Product placeH = new Product(dataP[0],dataP[1],dataP[2],dataP[3], num1, num2 , num3 , num4);
+           return pro;
          }
        }
