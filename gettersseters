@@ -1,1 +1,31 @@
 
+class playground{
+   private String pID2;
+   private String sPrice2;
+   private String pPrice2;
+   private String textD2;
+   private int numB2;
+   private int numS2;
+   private int numOH2;
+   private int profitG2;
+   private 
+   
+   public setpID(String pID){
+      pID = pID2;
+   }
+   public setSPrice(String sPrice){
+      sPrice = sPrice2;
+   }
+   public setPPrice(String pPrice){
+      pPrice = pPrice2;
+   }
+   public setpID(String pID){
+      pID = pID2;
+   }
+   public setpID(String pID){
+      pID = pID2;
+   }
+   public String toString(){
+   
+   }
+}
