@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Product 
+public class ProductDataprocc 
 {
    public String pID;
    public String sPrice;
@@ -26,8 +26,8 @@ public class Product
       numB = this.numB; numS = this.numS;  numOh = this.numOh; profitG = this.profitG;
    }
    public static ArrayList<Product> produtStats(String fileName)
-   {
-      ArrayList<Product> pro = new ArrayList<Product>();
+      {
+         ArrayList<Product> pro = new ArrayList<Product>();
       String[] dataP;
       String[] dataT;
        try
@@ -37,19 +37,19 @@ public class Product
                Scanner productsReader = new Scanner(products);// these are the readers for each file
                Scanner transactsReader = new Scanner(transacts);
                while(productsReader.hasNextLine())//this loop reads the files, then feeds the data
-               {
+                  {
                    /* Ethan: I'm thinking of just reading the transacts file, recording dataT[0] as the global taxrate, then deleting dataT[0] from the whole thing, IDK if it
                    automatically shifts everything over 1 or if that needs to be done manually. that's the only problem. */
                    String pLine = productsReader.nextLine();
                    dataP = pLine.split("/s");
                    System.out.println(dataP);
-               }
+                  }
                productsReader.close();//closing the file 
                while(transactsReader.hasNextLine())//this loop reads the files, then feeds the data
-               {   String tLine = transactsReader.nextLine();
+                  {   String tLine = transactsReader.nextLine();
                    dataT = tLine.split("/s");
                    System.out.println(dataT);
-               }
+                  }
                transactsReader.close();//closing the file 
                // did the reading of the two files in separate batches just for readability
             }
@@ -66,7 +66,8 @@ public class Product
                
              
             }
-            Product placeH = new Product(dataP[0],dataP[1],dataP[2],dataP[3],dataP[4],dataP[5],dataP[6],dataP[7]);
+            Product pro = new Product(dataP[0],dataP[1],dataP[2],dataP[3],dataP[4],dataP[5],dataP[6],dataP[7]);
            return pro;
          }
+         // we're doing this wrong, we're supposed to make an object from each line, and not just make the whole file one object. dunno how the f we're gonna work with that
        }
