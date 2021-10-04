@@ -46,9 +46,9 @@ public class Product
                }
                productsReader.close();//closing the file 
                while(transactsReader.hasNextLine())//this loop reads the files, then feeds the data
-               {   String pLine = transactsReader.nextLine();
-                   dataP = pLine.split("/s");
-                   System.out.println(dataP);
+               {   String tLine = transactsReader.nextLine();
+                   dataT = tLine.split("/s");
+                   System.out.println(dataT);
                }
                transactsReader.close();//closing the file 
                // did the reading of the two files in separate batches just for readability
