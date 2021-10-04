@@ -35,12 +35,21 @@ public class Product
                File transacts = new File("C:\\Users\\donnelaar\\Downloads\\transactions.txt"); // this is the transactions file
                Scanner productsReader = new Scanner(products);// these are the readers for each file
                Scanner transactsReader = new Scanner(transacts);
-               while(myReader.hasNextLine())//this loop reads the files, then feeds the data
+               while(productsReader.hasNextLine())//this loop reads the files, then feeds the data
                {
                    /* Ethan: I'm thinking of just reading the transacts file, recording dataT[0] as the global taxrate, then deleting dataT[0] from the whole thing, IDK if it
                    automatically shifts everything over 1 or if that needs to be done manually. that's the only problem.
-                   String line = productsReader.nextLine();
-                   dataP = line.split("/s");
+                   String pLine = productsReader.nextLine();
+                   dataP = pLine.split("/s");
+                   System.out.println(dataP);
+               }
+               myReader.close();//closing the file 
+               while(transactsReader.hasNextLine())//this loop reads the files, then feeds the data
+               {
+                   /* Ethan: I'm thinking of just reading the transacts file, recording dataT[0] as the global taxrate, then deleting dataT[0] from the whole thing, IDK if it
+                   automatically shifts everything over 1 or if that needs to be done manually. that's the only problem.
+                   String pLine = productsReader.nextLine();
+                   dataP = pLine.split("/s");
                    System.out.println(dataP);
                }
                myReader.close();//closing the file 
