@@ -1,4 +1,3 @@
-
 class playground{
    private String pID2;
    private String sPrice2;
@@ -8,7 +7,6 @@ class playground{
    private int numS2;
    private int numOH2;
    private int profitG2;
-   private 
    
    public setpID(String pID){
       pID = pID2;
@@ -19,12 +17,13 @@ class playground{
    public setPPrice(String pPrice){
       pPrice = pPrice2;
    }
-   public setpID(String pID){
-      pID = pID2;
+   public getTextD(String textD){
+      textD = textD2;
    }
-   public setpID(String pID){
-      pID = pID2;
+   public setNumB(int numB2){
+      numB = numB2;
    }
+   
    public String toString(){
    
    }
