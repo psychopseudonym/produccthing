@@ -21,10 +21,11 @@ public class Product
    }
    public Product(String pID, String sPrice, String pPrice, String textD, int numB,  int numS,  int numOh, int profitG)
    {
+   // using the "this." keyword to tell the computer that i want to set object parameters to the constructor parameters
        pID = this.pID; sPrice = this.sPrice; textD = this.textD; pPrice = this.pPrice; 
       numB = this.numB; numS = this.numS;  numOh = this.numOh; profitG = this.profitG;
    }
-   public static ArrayList<Product> produtStats (String fileName)
+   public static ArrayList<Product> produtStats(String fileName)
    {
       ArrayList<Product> pro = new ArrayList<Product>();
       String[] dataP;
@@ -38,21 +39,19 @@ public class Product
                while(productsReader.hasNextLine())//this loop reads the files, then feeds the data
                {
                    /* Ethan: I'm thinking of just reading the transacts file, recording dataT[0] as the global taxrate, then deleting dataT[0] from the whole thing, IDK if it
-                   automatically shifts everything over 1 or if that needs to be done manually. that's the only problem.
+                   automatically shifts everything over 1 or if that needs to be done manually. that's the only problem. */
                    String pLine = productsReader.nextLine();
                    dataP = pLine.split("/s");
                    System.out.println(dataP);
                }
-               myReader.close();//closing the file 
+               productsReader.close();//closing the file 
                while(transactsReader.hasNextLine())//this loop reads the files, then feeds the data
-               {
-                   /* Ethan: I'm thinking of just reading the transacts file, recording dataT[0] as the global taxrate, then deleting dataT[0] from the whole thing, IDK if it
-                   automatically shifts everything over 1 or if that needs to be done manually. that's the only problem.
-                   String pLine = productsReader.nextLine();
+               {   String pLine = transactsReader.nextLine();
                    dataP = pLine.split("/s");
                    System.out.println(dataP);
                }
-               myReader.close();//closing the file 
+               transactsReader.close();//closing the file 
+               // did the reading of the two files in separate batches just for readability
             }
             catch(FileNotFoundException|NoSuchElementException e)
             {
