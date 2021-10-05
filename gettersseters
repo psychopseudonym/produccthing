@@ -1,4 +1,4 @@
-class playground{
+class Product{
    private String pID2;
    private String sPrice2;
    private String pPrice2;
@@ -8,23 +8,14 @@ class playground{
    private int numOH2;
    private int profitG2;
    
-   public setpID(String pID){
-      pID = pID2;
-   }
-   public setSPrice(String sPrice){
-      sPrice = sPrice2;
-   }
-   public setPPrice(String pPrice){
-      pPrice = pPrice2;
-   }
-   public getTextD(String textD){
-      textD = textD2;
-   }
-   public setNumB(int numB2){
-      numB = numB2;
-   }
-   
-   public String toString(){
-   
+   public Product(String pID, String sPrice, String textD, String pPrice, int numB, int numS, int numOH, int profitG){
+      pID = this.pID;
+      sPrice = this.sPrice; 
+      textD = this.textD;
+      pPrice = this.pPrice;
+      numB = this.numB;
+      numS = this.numS;
+      numOH = this.numOH;
+      profitG = this.profitG;
    }
 }
