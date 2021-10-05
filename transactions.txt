@@ -1,3 +1,4 @@
+0.0825
 blk1 buy 25
 wht1 buy 10
 snk1 buy 23
