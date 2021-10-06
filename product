@@ -23,7 +23,7 @@ public class ProductDataprocc
       numB = this.numB; numS = this.numS;  numOh = this.numOh; profitG = this.profitG;
    }
    public Product(String pID, String sPrice, String pPrice, String textD){ 
-   // doing this so we can actually pass the product objects into the array for processing
+   // doing this so we can actually pass the product objects into the array for processing, will initialize it with the more parameter constructor
        pID = this.pID; sPrice = this.sPrice; textD = this.textD; pPrice = this.pPrice; 
    }
       
