@@ -2,9 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class ProductDataprocc 
-{
-   
-   public int numB;
+{  public int numB;
    public int numS;
    public int numOh;
    public int profitG;
@@ -18,12 +16,8 @@ public class ProductDataprocc
       
    }
    public class Product {
-   public String pID;
-   public String sPrice;
-   public String pPrice;
-   public String textD;
-      public Product(String pID, String sPrice, String pPrice, String textD, int numB,  int numS,  int numOh, int profitG)
-   {
+   public String pID;public String sPrice;public String pPrice;public String textD;public int numB;public int numS;public int numOh;public int profitG;
+   public Product(String pID, String sPrice, String pPrice, String textD, int numB,  int numS,  int numOh, int profitG){
    // using the "this." keyword to tell the computer that i want to set object parameters to the constructor parameters
        pID = this.pID; sPrice = this.sPrice; textD = this.textD; pPrice = this.pPrice; 
       numB = this.numB; numS = this.numS;  numOh = this.numOh; profitG = this.profitG;
@@ -45,7 +39,6 @@ public class ProductDataprocc
                File transacts = new File("C:\\Users\\donnelaar\\Downloads\\transactions.txt"); // this is the transactions file
                Scanner productsReader = new Scanner(products);// these are the readers for each file
                Scanner transactsReader = new Scanner(transacts);
-               
                while(productsReader.hasNextLine())//this loop reads the files, then feeds the data
                   {
                    /* Ethan: I'm thinking of just reading the transacts file, recording dataT[0] as the global taxrate, then deleting dataT[0] from the whole thing, IDK if it
