@@ -7,7 +7,9 @@ public class ProductDataprocc
    public int numOh;
    public int profitG;
    public int taxes;
+   public ArrayList<Product> transactionlist = new ArrayList<Product>();
    public ArrayList<Product> produtStats = new ArrayList<Product>();
+   
    public int taxrate;
     
    public static void main(String[]args)
@@ -73,9 +75,9 @@ public class ProductDataprocc
            return pro;
          }
          
-         public static void dataprocessing(){ArrayList<Product> productslist, File transactions}{ // this method is supposed to return the actual arraylist
+         public static void dataprocessing(){ArrayList<Product> productslist, }{ // this method is supposed to return the actual arraylist
          Scanner fileinput = new Scanner(this.transactions);
-         while(fileinput.
+         while(fileinput.a
          foreach(){
          switch(){
          switch(){
