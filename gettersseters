@@ -1,12 +1,12 @@
 class Product{
-   private String pID2;
-   private String sPrice2;
-   private String pPrice2;
-   private String textD2;
-   private int numB2;
-   private int numS2;
-   private int numOH2;
-   private int profitG2;
+   private String pID;
+   private String sPrice;
+   private String pPrice;
+   private String textD;
+   private int numB;
+   private int numS;
+   private int numOH;
+   private int profitG;
    
    public Product(String pID, String sPrice, String textD, String pPrice, int numB, int numS, int numOH, int profitG){
       pID = this.pID;
@@ -17,5 +17,54 @@ class Product{
       numS = this.numS;
       numOH = this.numOH;
       profitG = this.profitG;
+   }
+   
+   public int getNumOH(){
+      return numOH;
+   }
+   public void setNumOH(int numOH){
+      numOH = this.numOH();
+   }
+   public String getPID(){
+      return pID;
+   }
+   public void setPID(){
+      pID = this.pID();
+   }
+   public String getSPrice(){
+      return sPrice;
+   }
+   public void setSPrice(){
+      sPrice = this.sPrice();
+   }
+   public String getPPrice(){
+      return pPrice;
+   }
+   public void getPPrice(){
+      pPrice = this.pPrice();
+   }
+   public String getTextD(){
+      return textD;
+   }
+   public void setTextD(){
+      textD = this.textD();
+   }
+   public int getNumB(){
+      return numB;
+   }
+   public void setNumB(){
+      numB = this.numB();
+   }
+   public int getNumS(){
+      return numS;
+   }
+   public void setNumS(){
+      numS = this.numS();
+   }
+   public int getProfitG(){
+      return profitG;
+   }
+   public void setProfitG(){
+      profitG = this.profitG();
    }
 }
