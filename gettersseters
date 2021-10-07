@@ -16,55 +16,55 @@ class Product{
       numB = this.numB;
       numS = this.numS;
       numOH = this.numOH;
-      profitG = this.profitG;
+      profitG = this.profitG; 
    }
    
+   public String getPID(){
+      return pID;
+   }
+   public void setPID(String pID){
+      pID = this.pID();
+   }
+   public String getSPrice(){
+      return sPrice;
+   }
+   public void setSPrice(String sPrice){
+      sPrice = this.sPrice();
+   }
+   public String getPPrice(){
+      return pPrice;
+   }
+   public void getPPrice(String pPrice){
+      pPrice = this.pPrice();
+   }
+   public String getTextD(){
+      return textD;
+   }
+   public void setTextD(String textD){
+      textD = this.textD();
+   }
+   public int getNumB(){
+      return numB;
+   }
+   public void setNumB(int numB){
+      numB = this.numB();
+   }
+   public int getNumS(){
+      return numS;
+   }
+   public void setNumS(int numS){
+      numS = this.numS();
+   }
    public int getNumOH(){
       return numOH;
    }
    public void setNumOH(int numOH){
       numOH = this.numOH();
    }
-   public String getPID(){
-      return pID;
-   }
-   public void setPID(){
-      pID = this.pID();
-   }
-   public String getSPrice(){
-      return sPrice;
-   }
-   public void setSPrice(){
-      sPrice = this.sPrice();
-   }
-   public String getPPrice(){
-      return pPrice;
-   }
-   public void getPPrice(){
-      pPrice = this.pPrice();
-   }
-   public String getTextD(){
-      return textD;
-   }
-   public void setTextD(){
-      textD = this.textD();
-   }
-   public int getNumB(){
-      return numB;
-   }
-   public void setNumB(){
-      numB = this.numB();
-   }
-   public int getNumS(){
-      return numS;
-   }
-   public void setNumS(){
-      numS = this.numS();
-   }
    public int getProfitG(){
       return profitG;
    }
-   public void setProfitG(){
+   public void setProfitG(int profitG){
       profitG = this.profitG();
    }
 }
