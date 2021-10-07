@@ -73,7 +73,18 @@ public class ProductDataprocc
            return pro;
          }
          
-         public static void dataprocessing(){ArrayList<Product> productslist, File transactions}{ // this method is supposed to return 
+         public static void dataprocessing(){ArrayList<Product> productslist, File transactions}{ // this method is supposed to return the actual arraylist
+         Scanner fileinput = new Scanner(this.transactions);
+         while(fileinput.
+         foreach(){
+         switch(){
+         switch(){
+         switch(){
+         
+         }
+         }
+         }
+         }
          
          }
        }
